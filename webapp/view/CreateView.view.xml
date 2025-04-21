@@ -1,0 +1,32 @@
+<mvc:View controllerName="app.capgepost27.controller.CreateView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="idCreatePage" title="Create Data">
+        <content>
+            <f:SimpleForm id="createForm" editable="true" layout="ResponsiveGridLayout">
+                <Label text="{i18n>Carrid}"/>
+                <Input id="carridInput" value="{Carrid}"/>
+ 
+                <Label text="{i18n>Connid}"/>
+                <Input id="connidInput" value="{Connid}"/>
+ 
+                <Label text="{i18n>Fldate}"/>
+                <DatePicker id="fldateInput" value="{Fldate}" displayFormat="yyyy-MM-dd" valueFormat="yyyy-MM-dd"/>
+ 
+                <Label text="{i18n>Bookid}"/>
+                <Input id="bookidInput" value="{Bookid}"/>
+ 
+                <Label text="{i18n>OrderDate}"/>
+                <DatePicker id="orderDateInput" value="{OrderDate}" displayFormat="yyyy-MM-dd" valueFormat="yyyy-MM-dd"/>
+            </f:SimpleForm>
+        </content>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer/>
+                <Button text="Submit" press="onCreate"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
