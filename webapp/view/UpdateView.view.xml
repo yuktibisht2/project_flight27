@@ -5,8 +5,8 @@
     xmlns:f="sap.ui.layout.form">
     <Page id="idUpdate" title="{i18n>titleUpdate}">
         <content/>
-             <f:SimpleForm editable="true">
-        <Label text="Carrid" ></Label>
+         <f:SimpleForm editable="true">
+            <Label text="Carrid" ></Label>
         <Input value="{CustomerModel>Carrid}" id="CarridInput"></Input>
        
         <Label text="Connid"></Label>
@@ -20,9 +20,10 @@
  
         <Label text="Orderdate"></Label>
         <Input value="{CustomerModel>OrderDate}" id="OrderDateInput" ></Input>
+       
         <Button text="{i18n>Update}" press="onUpdate" width="80px"></Button>
  
-      
+     
     </f:SimpleForm>
         <footer>
             <OverflowToolbar>
